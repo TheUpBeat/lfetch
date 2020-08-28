@@ -48,7 +48,7 @@ int main()
 	const double mb = 1024 * 1024;
 	double used_mb = (si.totalram / mb) - (si.freeram / mb) - (si.bufferram / mb) - (si.sharedram / mb) - (si.sharedram / mb);
 
-	printf(" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
+	printf(" ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ \n");
 
 	// Prints user@host
 	printf("       .---.	 %s@%s \n", user, hostname);
@@ -103,6 +103,6 @@ int main()
 
 	// Prints free RAM (include cache ram, as it cannot be removed)
 	//printf ("	RAM: \t\t%5.1f MB\n", used_mb);
-	printf(" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
+	printf(" ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ \n");
 	return 0;
 }
